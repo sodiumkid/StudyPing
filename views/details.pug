@@ -1,0 +1,55 @@
+extends layout.pug
+block csss
+  include ./details.css
+block scripts
+  script.
+    function toggleText(event) {
+      var text = document.getElementById("sharelink");
+      if (text.style.display === "block") {
+        text.style.display = "none";
+      } else {
+        text.style.display = "block";
+      }
+    }
+block content
+  - var link = "/details/" + id
+  div(id="listed")
+    div(id="entry")
+      div(class="thumbnail")
+        img(src=thumbnail width="250" alt="pic")
+      div(class="entryText")
+        h1(id="names") #{fileName}
+        p(id="uploader") Posted by #[a(href="/user/"+uploader) #{uploader}] 
+        p= subjects[index]
+        p= fileDescription
+        div(id="voteTick")
+          form(action=link method="post")
+            button(type="image" id= "updoot"  name="vote" value="up")
+          if upvoted
+            p(id="voteNum" style="color:red") #{votes}
+          else if downvoted
+            p(id="voteNum" style="color:blue") #{votes}
+          else 
+            p(id="voteNum") #{votes}
+          form(action=link method="post")
+            button(type="image" id= "downdoot" name="vote" value="down")
+        br()
+        form(action="/download" method="post")
+          button(type="text" name="image" class= "downloader" value=file) View PDF
+        br()
+        div(style="display: flex")
+          button(id="share" onclick="return toggleText(event)")
+            image(id="sharepic" src="https://res.cloudinary.com/drferrel/image/upload/v1585183337/3132-200_1_nslww2.png")
+          p(id="sharelink") https://studyping.com/details/#{id}
+        br()
+    hr()
+    div(id="comments")
+      form(action=link method="post")
+        textarea(rows="4" name="comment" cols="50" placeholder="Your Comment" required)
+        br()
+        div(id="bback")
+          input(type="submit" id="sub")
+      br()
+      each val in comments
+        p(class="username") #{val[0]}
+        p(class="textcom") #{val[1]}

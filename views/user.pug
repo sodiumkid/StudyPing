@@ -1,0 +1,26 @@
+extends layout.pug
+block csss
+  include ./explore.css
+block content
+  div(id="listed")
+    if error
+      h1 User hasn't uploaded anything!
+    else 
+      h1= username
+      each val, index in files
+        div(class="entry")
+          div(class="thumbnail")
+            img(src=thumbnails[index] width="250" alt="pic")
+          div(class="entryText")
+            h2= fileNames[index]
+            p= subjects[index]
+            p(class="nameLink") Uploaded by #[a(href="/user/"+uploaders[index]) #{uploaders[index]}]
+            p= descriptions[index]
+            if comments == 1
+              p= comments + " comment"
+            else 
+              p= comments + " comments"
+            - var linked = '/details/' + fileIds[index]
+            form(action=linked)
+              button(type="text" name="image" class= "downloader") View
+        hr()

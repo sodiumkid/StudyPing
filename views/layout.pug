@@ -1,0 +1,37 @@
+html
+  head
+    title StudyPing
+    style
+      include ./layout.css
+      block csss
+    block scripts
+  body
+    header
+      div(class="topnav")
+        form
+          button(id="logo" formaction="/") study
+          button(id="logoC" formaction="/") ping
+          button(formaction="/explore") Explore        
+        div(class="search-container")
+          form(action="/search")
+            input(type="text" placeholder=" Search..." name="search")
+            input(type="image" src="https://res.cloudinary.com/drferrel/image/upload/v1584383657/iconfinder_multimedia-07_2849829_qsce2b.png")
+        if !logged
+          form 
+            button(type="submit" formaction="/login" style="float:right;") Log In
+        else
+          form(method="POST")
+            button(type="submit" formaction="/logout?_method=DELETE" style="white-space: nowrap; margin-left: auto; float:right;") Log Out
+        form
+          button(formaction="/upload" style="float:right;") Upload
+  
+      
+    div(class="bodyClass")
+      block content
+    block foot
+      #footer
+        div(id="footer")
+          p(style="color:white") © Copyright 2020 StudyPing
+          a(style="color:white" href="/about") About
+        
+        

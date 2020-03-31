@@ -1,0 +1,160 @@
+
+body {
+  background-color: #fcfcfc;
+}
+
+button.follow {
+  vertical-align: top;
+  display: inline-block;
+  color: white;
+  border: none;
+  background-color: #1ba178;
+  padding: 5px 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 2px;
+}
+
+.follow:hover {
+  background-color: #68deba;
+}
+
+.details a{
+  color: black;
+  margin: 0px;
+  padding:0px;
+  text-decoration: none;
+}
+
+.details a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.downloader:hover {
+  background-color: black;
+}
+
+image {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+p {
+  font-family: 'Sen', sans-serif;
+  color: black;
+}
+
+.categories {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+
+.categories p{
+  margin: 0px;
+  margin-right: 20px;
+  font-size: 14pt;
+  color: black;
+}
+
+.categories a{
+  margin: 0px;
+  margin-right: 20px;
+  font-size: 14pt;
+  color: #285399;
+}
+
+#listed {
+  text-align: left;
+  padding-top: 50px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-left: 17%;
+  margin-right: 17%;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.picture {
+  width: 100px;
+  height: 125px;
+  margin-right: 10px;
+}
+
+#userinfo {
+  text-align: left;
+}
+
+.titles {
+  display: block;
+  font-size: 24px;
+  margin: 0px;
+  margin-bottom: 4px;
+}
+
+h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.clear {
+  padding: 0px;
+  margin: 0px;
+  font-size: 24px;
+}
+#clearimg {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+.entry {
+  display: flex;
+}
+
+h1 {
+  margin: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+a.namez {
+  padding: 0px;
+  font-size: 24;
+}
+
+p.details {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+
+
+.searchBar {
+  background-color: #1ba178;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-left: 0%;
+  padding-right: 5%;
+  text-align: left;
+  outline: none;
+}
+
+.entryText {
+  text-align: left;
+
+}

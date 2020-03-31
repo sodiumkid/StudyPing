@@ -1,0 +1,13 @@
+body {
+  background-color: #fcfcfc;
+}
+
+#desc {
+  font-size: 20pt;
+  text-align: left;
+}
+#cont {
+  margin: 50px;
+  margin-bottom: 0px;
+  padding: 0px;
+}

@@ -1,0 +1,106 @@
+
+#titles {
+  padding: 40px;
+}
+
+#quote {
+  color: black;
+  margin: 0px;
+  padding: 10px;
+  padding-top: 200px;
+}
+#speaker {
+  margin-top: 0px;
+  padding-bottom: 200px;
+}
+
+#quotebox {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("https://res.cloudinary.com/drferrel/image/upload/v1584579542/photo-1549880338-65ddcdfd017b_jpr23d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding:0px;
+  margin:0px;
+  background-image: url("https://res.cloudinary.com/drferrel/image/upload/v1584202900/bgjpg_aoox3m.jpg");
+}
+.left {
+  float: left;
+  margin-left: 30%;
+}
+.right {
+  float: right;
+  margin-right: 30%;
+}
+.resize {
+  width: 75%;
+  height: auto;
+  padding:0px;
+  margin:0px;
+}
+
+h1 {
+  color: #1ba178;
+  font-size: 50;
+}
+
+
+#explorebutton {
+  margin-top: 30px;
+  color: white;
+  background-color: #1ba178;
+  font-size: 30;
+  border-radius: 10px;
+  border: none;
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  outline: none;
+}
+
+#explorebutton:hover {
+  background-color: #68deba;
+}
+
+.twoCol {
+  display: flex;
+}
+
+.one {
+  flex: 0 0 53%;
+}
+
+.two {
+  flex: 1;
+}
+
+.reasons {
+  padding: 40px;
+}
+
+hr {
+  padding: 0px;
+  margin: 0px;
+}
+
+#swap {
+  background-color: #e8e7e1;
+  padding: 50px;
+  padding-bottom: 0px;
+}
+
+#lefter {
+  margin-top: 50px;
+  margin-left: 100px;
+  text-align: left;
+  font-size: 64;
+}
+#righter {
+  margin-bottom: 50px;
+  margin-right: 100px;
+  text-align: right;
+  font-size: 64;
+}

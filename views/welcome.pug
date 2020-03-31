@@ -1,0 +1,37 @@
+extends layout.pug
+block csss
+  include ./welcome.css
+block content
+  div(class="container")
+    div(id="titles")
+      h1 Study guides and Practice tests for all
+      h2 DIRECTLY FROM THEIR SOURCES
+      br()
+      form
+        button(id="explorebutton" formaction="/explore") Explore
+      br()
+    image(src="https://res.cloudinary.com/drferrel/image/upload/v1584843398/Untitled_enmpqe.png" class="resize")
+    hr()
+  
+  div(id="swap")
+    h1(id="lefter") Upload study guides...
+    img(style="width:80%" src="https://res.cloudinary.com/drferrel/image/upload/v1584816956/IMG-0112_yzdci8.png")
+    br()
+    h1(id="righter") ...or download them
+    hr()
+  div(id="quotebox")
+    h1(id="quote") "This website is amazing and you should use it"
+    p(id="speaker") - My mother
+    hr()
+  div(class="reasons")
+    h1 Made by students, for students
+  div(class="twoCol")
+    div(class="one") 
+      image(src="https://res.cloudinary.com/drferrel/image/upload/v1584241652/free_kzyk0s.png" style="width: 10%")
+      h2 Always will be free
+    div(class="two") 
+      image(src="https://res.cloudinary.com/drferrel/image/upload/v1584289073/iconfinder_computer_7_3071846_vpsaxg.png" style="width: 11%")
+      h2 Easy Download
+  br()
+  br()
+  

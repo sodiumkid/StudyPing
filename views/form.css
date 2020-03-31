@@ -1,0 +1,46 @@
+
+.field input {
+  height: 40px;
+  width: 550px;
+  font-size: 18pt;
+}
+
+.field textarea {
+  font-size: 14pt;
+  width: 550px;
+}
+
+.sub {
+  color: white;
+  border: none;
+  background-color: #1ba178;
+  font-size: 24px;
+  cursor:pointer;
+  outline: none;
+}
+
+
+
+#labeled {
+  font-size: 20px;
+  margin: 0px;
+}
+
+#submitbutton {
+  background-color: #1ba178;
+  border: none;
+  color: white;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+#uploader {
+  padding-left: 35%;
+  text-align: left;
+}
+
+.alternate {
+  text-align: center;
+}

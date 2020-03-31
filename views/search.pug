@@ -1,0 +1,43 @@
+extends layout.pug
+block csss
+  include ./explore.css
+block content
+  div(id="listed")
+    h1 #{searchquery}
+    - var linknow = "/search?search=" + searchquery
+    if userlook
+      div(class="categories")
+        a(href=linknow) Uploads
+        p Users
+    else
+      div(class="categories")
+        p Uploads
+        a(href=linknow+"&look=user") Users
+    if empty
+      p No search results!
+    else
+      if userlook
+        each val, index in names
+          a(class="namez" href="/user/"+names[index]) #{names[index]}
+      else
+        each val, index in files
+          div(class="entry")
+            img(class="picture" src=thumbnails[index] alt="pic")
+            div(class="entryText")
+              - var linked = '/details/' + fileIds[index]
+              a(href=linked class="titles") #{fileNames[index]}
+              p(class="details") Posted by #[a(href="/user/"+uploaders[index]) #{uploaders[index]}]
+              //p(class="details") #{subjects[index]}    
+              p(class="details") #{descriptions[index]}
+              div(style="display:flex")
+                if votes[index] == 1
+                  p(class="details") #{votes[index]} ping 
+                else 
+                  p(class="details") #{votes[index]} pings 
+                if comments[index] == 1
+                  p(class="details") #{comments[index]} comment 
+                else 
+                  p(class="details") #{comments[index]} comments 
+
+          br()
+          br()

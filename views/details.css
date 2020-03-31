@@ -1,0 +1,181 @@
+
+body {
+  background-color: #fffcfa;
+}
+
+button.downloader {
+  vertical-align: top;
+  display: inline-block;
+  color: white;
+  border: none;
+  background-color: #1ba178;
+  padding: 5px 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 2px;
+}
+
+.downloader:hover {
+  background-color: #68deba;
+}
+
+
+#share {
+  text-align: left;
+  width: 90px;
+  height: 40px;
+  background-color: #15d4d4;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#sharepic {
+  margin-left: 5px;
+  text-align: left;
+  width: 70px;
+  height: 20px;
+  white-space: nowrap;
+}
+
+#share:hover {
+  background-color: #87e8e8;
+}
+#sharelink {
+  font-size: 18pt;
+  padding: 0px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  display: none;
+}
+image {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-family: 'Sen', sans-serif;
+  color: black;
+}
+
+#uploader a{
+  color: black;
+  text-decoration: none;
+}
+
+#uploader a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+
+#listed{
+  background-color: #fcfcfc;
+  padding: 50px;
+  padding-top: 0px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+#updoot {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: url("https://res.cloudinary.com/drferrel/image/upload/v1584549228/updoot_k3nmh2.png");
+  background-size: 20px 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+#voteNum {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#downdoot {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: url("https://res.cloudinary.com/drferrel/image/upload/v1584549228/downdoot_spn1nl.png");
+  background-size: 20px 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+#voteTick {
+  padding: 10px;
+  margin: 10px;
+  margin-left: 0px;
+  padding-left: 0px;
+  display:flex
+}
+
+#entry {
+  display: flex;
+}
+
+#comments {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: left;
+}
+
+textarea {
+  resize: none;
+  font-size: 18;
+  width: 100%;
+}
+
+.username {
+  font-size: 14;
+  padding: 0px;
+  margin: 0px;
+}
+.textcom {
+  font-size: 18;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+#bback {
+  text-align: right;
+  background-color: #fffcfa;
+  border-radius: 0px 0px 10px 10px;
+
+}
+
+#sub {
+  width: 200px;
+  height: 25px;
+  border: none;
+  background-color: #1ba178;
+  border-radius: 0px 0px 10px 10px;
+  color:white;
+  cursor: pointer;
+  outline: none;
+}
+
+#sub:hover {
+  background-color: #68deba;
+  color:white;
+}
+
+.thumbnail {
+  margin: 10px;
+}
+
+.entryText {
+  text-align: left;
+  margin: 10px;
+}

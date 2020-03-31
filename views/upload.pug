@@ -1,0 +1,44 @@
+extends layout.pug
+block csss
+  include ./form.css
+block content
+  div(class="field")
+    br()
+    h1 Upload PDF
+    div(id="uploader")
+      form(enctype="multipart/form-data" action= "/upload" method= "post")
+        input(type="file" name="file" accept=".pdf" required)
+        br()
+        br()
+        p(id="labeled") File Name: 
+        input(type="text" name="name" placeholder="File Name" required)
+        br()
+        br()
+        p(id="labeled") Subject: 
+        input(list="subject" name="subject" placeholder="Subject" required)
+        datalist(id="subject")
+          option(value="Geometry")
+          option(value="Algebra")
+          option(value="Chemistry")
+          option(value="Music")
+          option(value="English")
+          option(value="Spanish")
+          option(value="French")
+          option(value="Calculus")
+          option(value="Precalculus")
+          option(value="Biology")
+          option(value="BioMed")
+          option(value="World History")
+          option(value="US History")
+          option(value="European History")
+          option(value="Human Geography")
+          option(value="Health")
+          option(value="Computer Science")
+          option(value="Art")
+        br()
+        br()
+        p(id="labeled") Description: 
+        textarea(rows="4" name="description" cols="50" placeholder="Description" required)
+        br()
+        br()
+        input(type="submit" id="submitbutton" value="Upload File" name="submit")

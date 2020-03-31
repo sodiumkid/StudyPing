@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
+body {
+  background-color: white;
+  font-family: 'Oxanium', Oxanium;
+}
+
+button {
+  font-family: 'Oxanium', Oxanium;
+  vertical-align: top;
+  display: inline-block;
+  color: white;
+  border: none;
+  background-color: gray;
+  padding: 22px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+p {
+  color: black;
+}

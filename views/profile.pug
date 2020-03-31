@@ -1,0 +1,54 @@
+extends layout.pug
+block csss
+  include ./explore.css
+block content
+  div(id="listed")
+    if error
+      h1 User not found!
+    else 
+      div(id="userinfo")
+        h1= name 
+        div(class="entry")
+          div()
+            h3(style="margin-right: 40px") Reputation
+            div(style="display:flex")
+              img(id="clearimg" src="https://res.cloudinary.com/drferrel/image/upload/v1584587790/crown_bzqtmf.png")
+              p(class="clear") #{rep}
+          div()
+            h3(style="margin-right: 40px") User Number
+            p(class="clear") #{id}
+          div()
+            h3 Followers
+            p(class="clear") #{followers}
+        br()
+        if !isSelf
+          div(class="entry")
+            form(method="POST")
+              if followed
+                button(class="follow" formaction="/user/"+name) Unfollow
+              else 
+                button(class="follow" formaction="/user/"+name) Follow
+      br()
+      hr()
+      br()
+      if !nofiles
+        each val, index in files
+          div(class="entry")
+            img(class="picture" src=thumbnails[index] alt="pic")
+            div(class="entryText")
+              - var linked = '/details/' + fileIds[index]
+              a(href=linked class="titles") #{fileNames[index]}
+              p(class="details") Posted by #[a(href="/user/"+uploaders[index]) #{uploaders[index]}] 
+              p(class="details") #{descriptions[index]}
+              div(style="display:flex")
+                if votes[index] == 1
+                  p(class="details") #{votes[index]} ping 
+                else 
+                  p(class="details") #{votes[index]} pings 
+                if comments[index] == 1
+                  p(class="details") #{comments[index]} comment 
+                else 
+                  p(class="details") #{comments[index]} comments 
+    
+          br()
+          br()
